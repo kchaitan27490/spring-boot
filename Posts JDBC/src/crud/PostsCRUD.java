@@ -79,7 +79,7 @@ public class PostsCRUD {
 			s.nextLine();
 
 		} while (doFlag == 1);
-
+		s.close();
 	}
 
 }
