@@ -20,7 +20,7 @@ public class PostsDAOImpl implements PostsDAO {
 		try {
 
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost/test", "root", "blackthorne");
+			con = DriverManager.getConnection("jdbc:mysql://localhost/test", "springuser", "Spr!ngUser!23");
 
 		} catch (Exception e) {
 			e.printStackTrace();
