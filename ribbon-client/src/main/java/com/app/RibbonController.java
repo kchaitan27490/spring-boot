@@ -21,8 +21,8 @@ public class RibbonController {
 	}
 	
 	@GetMapping("/api")
-	public String getUser() {
-		return restTemplate.getForObject("http://server/hitme", String.class);
+	public String getCabProvider() {
+		return restTemplate.getForObject("http://server/cabprovider", String.class);
 	}
 	
 

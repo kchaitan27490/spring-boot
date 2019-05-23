@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
-Built-By: kchaitan
-Build-Jdk: 11.0.3
 Implementation-Title: zuul-server
 Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: kchaitan
 Implementation-Vendor-Id: com.app
-Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
- -starter-parent/zuul-server
+Build-Jdk: 1.8.0_201
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/zuul-server
 Created-By: Maven Integration for Eclipse
 
