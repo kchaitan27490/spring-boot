@@ -49,4 +49,10 @@ public class ProviderController {
 		return ps;
 	}
 	
+	@PostMapping("/cabprovider/addall")
+	public Iterable<ProviderService> AddAllProviderDetails(@RequestBody Iterable<ProviderService> ps) {
+		psrepo.saveAll(ps);
+		return ps;
+	}
+	
 }
