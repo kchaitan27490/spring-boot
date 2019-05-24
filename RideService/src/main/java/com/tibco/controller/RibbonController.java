@@ -19,9 +19,15 @@ public class RibbonController {
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
+	
+
+	@GetMapping("/apitest")
+	public String testMethod() {
+		return restTemplate.getForObject("http://providerservice/cabprovider", String.class);
+	}
 
 	@GetMapping("/all/{riderid}")
 	public String getCabProvider(@PathVariable int riderid) {
-		return restTemplate.getForObject("http://server/cabprovider/" + riderid, String.class);
+		return restTemplate.getForObject("http://providerservice/cabprovider/" + riderid, String.class);
 	}
 }
